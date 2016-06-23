@@ -1,16 +1,19 @@
 {
-  "name": "ngHandsontable",
+  "name": "ngHandsontable-tattek",
   "dependencies": {
-    "angular": "~1.4",
-    "handsontable": "~0.25.0"
+    "angular": "~1.4"
   },
   "homepage": "https://github.com/handsontable/ngHandsontable",
   "authors": [
     "Handsoncode",
     "Handsoncode <hello@handsontable.com>"
   ],
-  "description": "AngularJS directive for Handsontable",
-  "main": "dist/ngHandsontable.js",
+  "description": "AngularJS directive for Handsontable @tattek edition",
+  "main": [
+    "handsontable/dist/handsontable.css",
+    "handsontable/dist/handsontable.js",
+    "dist/ngHandsontable.js"
+  ],
   "keywords": [
     "angular",
     "angularjs",
