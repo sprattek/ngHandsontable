@@ -5110,8 +5110,11 @@ Handsontable.Core = function Core(rootElement, userSettings) {
         });
       }, 0));
     } else {
-      cellProperties.valid = true;
-      done(cellProperties.valid);
+      //tattek was here
+      instance._registerTimeout(setTimeout(function() {
+        cellProperties.valid = true;
+        done(cellProperties.valid);
+      }, 0));
     }
   };
   function setDataInputToArray(row, propOrCol, value) {
